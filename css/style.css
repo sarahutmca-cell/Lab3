@@ -2,3 +2,96 @@
 
 }
 
+main {
+    grid-area: mn;
+}
+
+
+header {
+    background-color: #c0daf3;
+    border: 1px solid #000;
+    grid-area: hd;
+}
+
+.navbar {
+     background-color: #c0daf3;
+    border: 1px solid #000;
+    grid-area: nav;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.card-grids {
+    border: 1px solid #000;
+
+}
+
+.card1 {
+    background-color: #d47f7f;
+    grid-column: 1 / -1;
+
+}
+
+.card2 {
+    background-color: #d47f7f;
+    grid-area: sc2;
+   
+}
+
+.card3 {
+        background-color: #d47f7f;
+    grid-area: sc3;
+}
+
+.card-img {
+    border: 1px solid #000;
+    margin: 10px;
+    width: 70%;
+}
+
+
+.layout {
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+           "hd hd"
+           "nav nav"
+           "mn mn";
+    }
+
+
+.card-grids {
+      display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "sc2 sc2"
+        "sc3 sc3"
+   
+}
+
+footer {
+    background-color: #c0daf3;
+    border: 1px solid #000;
+}
+
+
+@media (min-width:768px) {
+    .layout {
+    display: grid;
+    grid-template-columns: 220px 1fr ;
+    grid-template-areas: 
+       "hd hd"
+       "nav mn";
+    }
+    .card-grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 
+    "sc sc"
+    "sc2 sc3";
+
+           
+    }
+}
