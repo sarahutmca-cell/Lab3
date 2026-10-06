@@ -1,5 +1,6 @@
 * {
-
+margin: 0;
+padding: 0;
 }
 
 main {
@@ -36,13 +37,11 @@ nav li a {
 
 .card2 {
     background-color: #d47f7f;
-    grid-area: sc2;
    
 }
 
 .card3 {
         background-color: #d47f7f;
-    grid-area: sc3;
 }
 
 .card-img {
@@ -58,22 +57,21 @@ nav li a {
         grid-template-areas: 
            "hd hd"
            "nav nav"
-           "mn mn";
+           "mn mn"
+           "ft ft";
     }
 
 
 .card-grids {
       display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "sc2 sc2"
-        "sc3 sc3"
    
 }
 
 footer {
     background-color: #c0daf3;
     border: 1px solid #000;
+    grid-area: ft;
 }
 
 
@@ -83,14 +81,14 @@ footer {
     grid-template-columns: 220px 1fr ;
     grid-template-areas: 
        "hd hd"
-       "nav mn";
+       "nav mn"
+       "ft ft";
     }
     .card-grids {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-areas: 
-    "sc sc"
-    "sc2 sc3";
+    grid-template-columns: repeat(2, 1fr);
+
+    
 
            
     }
