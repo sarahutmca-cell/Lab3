@@ -1,7 +1,30 @@
 * {
 margin: 0;
 padding: 0;
+
 }
+
+body {
+font-family: font1;
+font-size: larger;
+}
+
+
+@font-face {
+    font-family: font1 ;
+    src: url(fonts/font1.ttf);
+}
+
+
+
+
+#title {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
 
 main {
     grid-area: mn;
@@ -9,20 +32,37 @@ main {
 
 
 header {
-    background-color: #c0daf3;
+    background-color: #fff0da;
     border: 1px solid #000;
     grid-area: hd;
+    width: auto;
+    padding: 10px;
 }
 
 .navbar {
-     background-color: #c0daf3;
+    background-color: #fff6da;
     border: 1px solid #000;
     grid-area: nav;
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+
+nav li {
+    margin-bottom: 30px;
+
 }
 
 nav li a {
     text-decoration: none;
+    list-style: none;
 }
+
+li {
+    list-style: none;
+    
+}
+
 
 .card-grids {
     border: 1px solid #000;
@@ -30,24 +70,37 @@ nav li a {
 }
 
 .card1 {
-    background-color: #d47f7f;
+    background-color: #c29f9f;
     grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px;
+
 
 }
 
 .card2 {
-    background-color: #d47f7f;
-   
+    background-color: #c29f9f;
+    text-align: center;
+    padding: 10px;
+
+ 
 }
 
 .card3 {
-        background-color: #d47f7f;
+    background-color: #c29f9f;
+    padding: 10px;
+    text-align: center;
+    
+
+
+
 }
 
 .card-img {
-    border: 1px solid #000;
+    border: 2px dashed #000;
     margin: 10px;
-    width: 70%;
+    width: 60%;
+    padding: 2px;
 }
 
 
@@ -63,15 +116,19 @@ nav li a {
 
 
 .card-grids {
-      display: grid;
-        grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
    
 }
 
 footer {
-    background-color: #c0daf3;
+    background-color: #fff6da;
     border: 1px solid #000;
     grid-area: ft;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    font-size: 15px;
 }
 
 
